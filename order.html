@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Place Your Order</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="flowers.html">View Flowers</a>
+            <a href="php/logout.php">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <form action="php/placeOrder.php" method="POST">
+            <input type="text" name="flower" placeholder="Flower Name" required>
+            <input type="number" name="quantity" placeholder="Quantity" required>
+            <input type="text" name="address" placeholder="Delivery Address" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
